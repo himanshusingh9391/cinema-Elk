@@ -1,0 +1,84 @@
+.menu{
+    height: 30;
+    width: auto;
+    background: #b7c9e2;
+}
+
+
+
+.icons{
+    display: grid;
+    grid-template-columns: repeat(1,3fr);
+    margin-top: 3rem;
+    gap: 1rem;
+    margin-left: 2rem;
+    width: 10;
+}
+
+.poster{
+    padding: 0;
+    color: white;
+    height: 28vh;
+    width: 178vh;
+}
+
+.logo{
+    display: grid;
+    grid-template-columns: repeat(1,3fr);
+    margin-top: 1rem;
+    gap: 2rem;
+    margin-left: 3rem
+}
+
+.cardName{
+     border: 2px solid black; 
+     margin-top: 0.5rem; 
+     height: 28vh; 
+     width: 62vh; 
+    
+}
+
+span{
+    font-size: larger;
+}
+
+.div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    
+}
+
+button{
+    width: 10vw !important
+}
+
+.but{
+    width: 6vw !important;
+    margin-top: 1.2rem ;
+    margin-left: 1.5rem;
+}
+
+h5{
+    margin-left: 10rem;
+    font-size: larger;
+    margin-top: 1rem;
+}
+
+
+
+.cardDetail{
+    /* border: 2px solid black;  */
+    margin-top: 10rem; 
+    height: 28vh; 
+    width: 50vh; 
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h2{
+    font-family: cursive;
+    margin-left: 10rem;
+}

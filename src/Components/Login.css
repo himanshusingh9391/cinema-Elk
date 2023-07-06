@@ -1,0 +1,32 @@
+ 
+.form{
+    height: 30vh;
+    justify-content: space-evenly;
+}
+
+input {
+    width: 25vh !important;
+    height: 10 !important;
+    margin-bottom: 1rem !important;
+} 
+
+.input-col{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    height: 7vh;
+    width: 40vh;
+    justify-content: space-between;
+    margin-left: 15rem;
+    margin-top: 13rem;
+}
+
+button{
+    width: 25vh !important;
+}
+
+h4{
+    font-size: large;
+    font-family: cursive;
+    width: 40vh;
+}
+
