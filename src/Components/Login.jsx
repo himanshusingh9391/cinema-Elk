@@ -15,7 +15,7 @@ function Login() {
 
     async function handleLogin(){
         signInWithEmailAndPassword(auth,email,password).then((userCredential)=>{
-            navigate('/')
+            navigate('/home')
         })
     }
   return (

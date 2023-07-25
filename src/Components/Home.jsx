@@ -104,10 +104,12 @@ export default function Home () {
       </div>
 
        <div className='icons'>
-        <a href='/'> <AiTwotoneHome style={{height:'2rem',width:30}}/> </a>
+        <a href='/home'> <AiTwotoneHome style={{height:'2rem',width:30}}/> </a>
         <a href='/movie'> <BsCameraReelsFill style={{height:'2rem',width:30}}/></a>
-        <a href='/'><VscAccount  style={{height:'2rem',width:30}}/></a>   
+        <a href='/home'><VscAccount  style={{height:'2rem',width:30}}/></a>   
       </div>
+      <hr style={{borderLeft:'5px solid grey',height:'79rem',marginTop:'-10rem',position:'absolute' ,marginLeft:'5rem'}} />
+
       <div style={{marginLeft:'10rem', marginTop:'-12rem'}}>
         <h4>Now Playing</h4>
 
@@ -116,7 +118,7 @@ export default function Home () {
           {movies.map(movie => {
             return (
                 <div key={movie.id}>
-                  <Card style={{width:'8rem',marginLeft:'1rem',backgroundColor:'#32a88c'}} onClick={()=> navigate('/detail',{state:movie})}>
+                  <Card style={{width:'2rem',marginLeft:'4rem',backgroundColor:'#32a88c'}} onClick={()=> navigate('/detail',{state:movie})}>
                     <Card.Img src={IMAGE_API + movie.poster_path} style={{marginTop:'0.2rem',height:162,width:150,marginLeft:'1rem'}} ></Card.Img>
                     <Card.Title style={{width:150,fontSize:'medium'}}>{movie.title}</Card.Title>
                   </Card>
@@ -134,8 +136,8 @@ export default function Home () {
         {populars.map(popular => {
           return (
               <div key={popular.id}>
-                <Card style={{width:'8rem',marginLeft:'1rem',backgroundColor:'#32a88c',height:162,width:150,marginLeft:'1rem'}} onClick={()=>navigate('/detail',{state:popular})}>
-                  <Card.Img src={IMAGE_API + popular.poster_path} style={{marginTop:'0.2rem',height:162,width:150,marginLeft:'1rem'}}></Card.Img>
+                <Card style={{width:'8rem',marginLeft:'4rem',backgroundColor:'#32a88c'}} onClick={()=>navigate('/detail',{state:popular})}>
+                  <Card.Img src={IMAGE_API + popular.poster_path} style={{marginTop:'1rem',height:130,width:130,marginLeft:'1rem'}}></Card.Img>
                   <Card.Title style={{width:150,fontSize:'medium'}}>{popular.title}</Card.Title>
                 </Card>
               </div>
@@ -153,8 +155,8 @@ export default function Home () {
         {tops.map(top => {
           return (
               <div key={top.id}>
-                <Card style={{width:'8rem',marginLeft:'1rem',backgroundColor:'#32a88c'}} onClick={()=>navigate('/detail',{state:top})}>
-                  <Card.Img src={IMAGE_API + top.poster_path} style={{marginTop:'0.2rem',height:162,width:150,marginLeft:'1rem'}}></Card.Img>
+                <Card style={{width:'8rem',marginLeft:'4rem',backgroundColor:'#32a88c'}} onClick={()=>navigate('/detail',{state:top})}>
+                  <Card.Img src={IMAGE_API + top.poster_path} style={{marginTop:'1rem',height:130,width:130,marginLeft:'1rem'}}></Card.Img>
                   <Card.Title style={{width:150,fontSize:'medium'}}>{top.title}</Card.Title>
                 </Card>
               </div>
@@ -172,8 +174,8 @@ export default function Home () {
         {upcomings.map(upcoming => {
           return (
               <div key={upcoming.id}>
-                <Card style={{width:'8rem',marginLeft:'1rem',backgroundColor:'#32a88c'}} onClick={()=>navigate('/detail',{state:upcoming})}>
-                  <Card.Img src={IMAGE_API + upcoming.poster_path} style={{marginTop:'0.2rem',height:162,width:150,marginLeft:'1rem'}}></Card.Img>
+                <Card style={{width:'8rem',marginLeft:'4rem',backgroundColor:'#32a88c'}} onClick={()=>navigate('/detail',{state:upcoming})}>
+                  <Card.Img src={IMAGE_API + upcoming.poster_path} style={{marginTop:'1rem',height:130,width:130,marginLeft:'1rem'}}></Card.Img>
                   <Card.Title style={{width:150,fontSize:'medium'}}>{upcoming.title}</Card.Title>
                 </Card>
               </div>

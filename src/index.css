@@ -80,5 +80,49 @@ h3{
 
 h2{
     font-family: cursive;
-    margin-left: 10rem;
+    margin-left: 3rem;
+}
+
+.adi{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.mod{
+    background-color:rgba(185,185,185,0.7);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+  }
+  .conatiner{
+    top: 45%;
+    left: 45%;
+    width: 15rem;
+    height: 28vh;
+    position: fixed;
+    padding: 1.8rem;
+    border-radius:12px ;
+    transform: translate(-52% ,-50%);
+    background-color: white;
+  }
+
+.module{
+    width: 4vh !important;
+    /* border-bottom: none; */
+    outline: none;
+}
+
+.bot{
+    display: flex;
+    width: 6vw !important;
+    margin-top: 1.5rem !important;
+    margin-left: 1rem;
+    gap: 1.5rem;
+    
+}
+
+.ad{
+    margin-left: 2rem;
 }
