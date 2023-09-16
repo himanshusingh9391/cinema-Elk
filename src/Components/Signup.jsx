@@ -21,10 +21,7 @@ function Signup() {
         })
     }
 
-    // const handleName=(e)=>{
-    //   setNames(e.currentTarget.value)
-    //   // console.log(names);
-    // }
+  
   return (
     <div className='logout'>
       <div className='login-page'>
