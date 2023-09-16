@@ -29,7 +29,7 @@ function Login() {
             <Input onChange={(e)=>setPassword(e.currentTarget.value)}placeholder='Enter password' type='password'/>
             <Button onClick={handleLogin}type='primary'>Login Now</Button>
             <div style={{marginTop:'1rem',color:'white',marginLeft:'1rem'}}>
-              Join the club <a href='/signup'>Click here</a>
+              <span onClick={()=>navigate('/signup')}> Join the club Click here </span>
             </div>
           </Col>
         </Row>
