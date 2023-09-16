@@ -34,7 +34,7 @@ function Signup() {
             <Input onChange={handleName} placeholder='Enter Full Name' type='text' />
             <Button type='primary'>Join the Club</Button>
             <div style={{marginTop:'1rem',color:'white',marginLeft:'1rem'}}>
-              Already a member? <a href='/'>Click here</a>
+              <span onClick={()=>navigate('/')}>Already a member? Click here </span>
             </div>
           </Col>
         </Row>
